@@ -13,7 +13,6 @@ class LineSplitStream extends stream.Transform {
     callback();
   }
 
-
   _flush(callback) {
     const tokens = results.split(os.EOL);
     for (const token of tokens) {
